@@ -1,0 +1,9 @@
+The attached data file contains weather data for a large number of sites.  The provided R script reads this data, and plots average temperature over days for a few sites.  This script can be run using the rocker/r-base image at https://hub.docker.com/r/rocker/r-base/
+
+The R code is contained in read_data.R which reads data from daily_16.json
+ 
+#  Please run the script in an r-base container and note how you’ve done this.
+#  How would you implement read_data.R in another language?  Our preference is Python, but please feel free to choose another language.  Whatever you choose please be prepared to discuss your choice. 
+#  When doing this please think about how to deal with a large number of sites – the provided R script only plots the first 10, but there are thousands
+#  Likewise for other data for each site – what if we also want to look at min/max temperature over the days?
+#  How would you deploy the new implementation?
