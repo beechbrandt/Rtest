@@ -1,3 +1,16 @@
+You work as a dev-ops supporting a small group of scientific programmers.  One of your users has written a small piece of code in R to read some weather data from a file, create some png images of average temperature over days, and then create an html file for displaying the images.  She'd like some help with a couple things:
+
+# She's only plotting ten sites at the moment, but there are thousands.  What's the best way to do this?  On any given day only a handful of sites may be of interest. 
+# Likewise for additional parameters - average temperature is the only thing being plotted now, but what if we want to extend to more (all?) of the available parameters.
+
+Some things for you to think about:
+
+# Your group primarily uses Python for production code, but are open to other languages if that makes sense.  How would you implement this in another language?  Please be prepared to discuss your choice of language.
+# Once everything is ready how would you deploy this code in your organization?
+
+As a starting point the rocker/r-base image at https://hub.docker.com/rocker/r-base/ should get you started with running the intial R code.
+
+
 The attached data file contains weather data for a large number of sites.  The provided R script reads this data, and plots average temperature over days for a few sites.  This script can be run using the rocker/r-base image at https://hub.docker.com/r/rocker/r-base/
 
 The R code is contained in read_data.R which reads data from daily_16.json
